@@ -25,6 +25,9 @@ public class ContaTerminal {
     System.out.print("Para finalizar, insira o valor do seu saldo: ");
     saldo = scanner.nextDouble();
 
+    // Fecha o scanner
+    scanner.close();
+
     // Imprime a mensagem final formatada
     System.out.printf(
             "\nOlá %s, obrigado por criar uma conta em nosso banco. Sua agência é %s, conta bancária número: %d, e o seu saldo bancário é de R$ %.2f%n",
@@ -32,7 +35,5 @@ public class ContaTerminal {
     );
     System.out.println("\nPara mais informações, entre em contato pelo telefone: 0800-529-0000 ou em algum de nossos canais de atendimento.");
 
-    // Fecha o scanner
-    scanner.close();
   }
 }
